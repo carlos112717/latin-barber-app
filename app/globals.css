@@ -1,1 +1,9 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-brand-black: #0C0C0C;
+    --color-brand-gold: #FFB700;
+    --color-brand-white: #FFFFFF;
+}
