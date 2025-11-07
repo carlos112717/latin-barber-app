@@ -1,0 +1,10 @@
+import { createClient } from '@supabase/supabase-js'
+
+// Usamos las mismas variables de entorno que ya tienes en .env.local
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+
+// Creamos y exportamos el cliente de Supabase
+export const supabase = createClient(supabaseUrl, supabaseAnonKey)
+
+
